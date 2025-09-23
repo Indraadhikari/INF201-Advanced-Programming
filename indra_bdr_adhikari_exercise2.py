@@ -8,7 +8,7 @@ lines and that the lines are printed unchanged.
 
 Then implement a function tail() with the same arguments. tail() shall print the last n lines of the file. 
 You are allowed to read the entire file with read().'''
-
+print('Task 1—Implementing "head" and "tail" in Python:')
 def head(filename, n = 5):
     with open(filename) as tfile:
         for line_number, line in enumerate(tfile):
@@ -35,7 +35,7 @@ comment that describes the data structure returned.
 
 NOTE: You are not allowed to use Pandas or other libraries to read the CSV file in this exercise. You need to implement 
 the parser using plain Python functions such as open(), readline(), split() etc.'''
-
+print('\n Task 2—Reading weather data:')
 def read_weather(filename):
     data = [] #Reads given CSV file and returns a list of dictionaries.
     with open(filename, "r", encoding="latin-1") as f:
